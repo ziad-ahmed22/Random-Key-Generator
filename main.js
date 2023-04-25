@@ -1,18 +1,25 @@
+let preview = document.querySelector("form .value");
+let chekboxes = document.querySelectorAll("input[type='checkbox']");
+
+let capitalLetter = "ABCDEFGHIJKLMNOBQRSTUVWXYX";
+let smallLetter = "abcdefghhijklmnopqrstuvwxyz";
+let number = "01234567890123456789";
+let specialChar = "!@#&$_!@#&$_";
+
+
 document.getElementById("btn").addEventListener('click', e => {
-    let preview = document.querySelector("form .value");
-    let numCount = document.querySelector("input[type='number']").value;
-    let chekboxes = document.querySelectorAll("input[type='checkbox']");
     
-    let capitalLetter = "ABCDEFGHIJKLMNOBQRSTUVWXYX";
-    let smallLetter = "abcdefghhijklmnopqrstuvwxyz";
-    let number = "0123456789";
-    let specialChar = "!@#&$_!@#&$_";
-
-    let target = "";
-    let randomPass = "";
-
     e.preventDefault();
     preview.textContent = "";
+    let randomKey = "";
+
+    let target = "";
+    target == "" ? target = capitalLetter : "";
+
+    let numCount = document.querySelector("input[type='number']").value;
+    numCount <= 6 ? numCount = 6 : "";
+    numCount >= 22 ? numCount = 22 : "";
+    
 
     chekboxes.forEach(chekbox => {
         if (chekbox.checked) {
@@ -24,15 +31,15 @@ document.getElementById("btn").addEventListener('click', e => {
     });
     
     for (let i = 0; i < numCount; i++) {
-        randomPass += target[Math.floor(Math.random() * target.length)];
+        randomKey += target[Math.floor(Math.random() * target.length)];
     }
 
-    preview.textContent = randomPass;
+    preview.textContent = randomKey;
 });
 
 document.querySelector("form .value").onclick = () => {
     navigator.clipboard.writeText(document.querySelector("form .value").textContent);
-    document.querySelector(".copy").textContent = "password copied to clipboard";
+    document.querySelector(".copy").textContent = "Key copied to clipboard";
     document.querySelector(".copy").classList.add("green");
     setTimeout(() => {
         document.querySelector(".copy").textContent = "click up to copy Password"
