@@ -3,7 +3,7 @@ let chekboxes = document.querySelectorAll("input[type='checkbox']");
 
 let capitalLetter = "ABCDEFGHIJKLMNOBQRSTUVWXYX";
 let smallLetter = "abcdefghhijklmnopqrstuvwxyz";
-let number = "01234567890123456789";
+let number = "0123456789";
 let specialChar = "!@#&$_!@#&$_";
 
 
@@ -12,15 +12,12 @@ document.getElementById("btn").addEventListener('click', e => {
     e.preventDefault();
     preview.textContent = "";
     let randomKey = "";
-
     let target = "";
-    target == "" ? target = capitalLetter : "";
-
     let numCount = document.querySelector("input[type='number']").value;
+
     numCount <= 6 ? numCount = 6 : "";
     numCount >= 22 ? numCount = 22 : "";
     
-
     chekboxes.forEach(chekbox => {
         if (chekbox.checked) {
             chekbox.name === 'capital' ? target += capitalLetter : "";
@@ -30,6 +27,8 @@ document.getElementById("btn").addEventListener('click', e => {
         }
     });
     
+    target == "" ? target = capitalLetter : "";
+
     for (let i = 0; i < numCount; i++) {
         randomKey += target[Math.floor(Math.random() * target.length)];
     }
