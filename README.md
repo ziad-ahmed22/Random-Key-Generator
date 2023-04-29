@@ -8,3 +8,4 @@
 </ul>
 <hr>
 <a href="https://ziad-ahmed22.github.io/Random_Key_Generator/">Live View</a>
+'[Link with example title](https://ziad-ahmed22.github.io/Random_Key_Generator/).'
