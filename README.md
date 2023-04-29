@@ -8,5 +8,3 @@
 </ul>
 <hr>
 <a href="https://ziad-ahmed22.github.io/Random_Key_Generator/">Live View</a>
-[Button Example]: [https://img.shields.io/badge/Title-37a779?style=for-the-badge](https://ziad-ahmed22.github.io/Random_Key_Generator/)
-[Button Example]: https://ziad-ahmed22.github.io/Random_Key_Generator/
