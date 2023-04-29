@@ -8,6 +8,3 @@
 </ul>
 <hr>
 <a href="https://ziad-ahmed22.github.io/Random_Key_Generator/">Live View</a>
-[button url="https://ziad-ahmed22.github.io/Random_Key_Generator/"]
-[Live View](https://ziad-ahmed22.github.io/Random_Key_Generator/){: .btn}
-<button name="button" onclick="https://ziad-ahmed22.github.io/Random_Key_Generator/">Live View</button>
