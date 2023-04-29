@@ -7,4 +7,4 @@
   <li>If no chosen checkbox? Will generate capital letters.</li>
 </ul>
 <hr>
-<a href="https://ziad-ahmed22.github.io/Random_Key_Generator/" target="_blank">Live View</a>
+<a href="https://ziad-ahmed22.github.io/Random_Key_Generator/">Live View</a>
