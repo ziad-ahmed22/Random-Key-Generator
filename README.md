@@ -8,4 +8,4 @@
   <li>HTML | CSS | Js | Responsive</li>
 </ul>
 <hr>
-<a href="https://ziad-ahmed22.github.io/Random_Key_Generator/">Live View</a>
+<a href="https://ziad-ahmed22.github.io/Random-Key-Generator/">Live View</a>
